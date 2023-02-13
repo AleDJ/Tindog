@@ -1,0 +1,197 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+}
+
+/* NAVIGATION */
+
+nav {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.icon-small {
+    max-width: 34px;
+}
+
+.logo-small {
+    max-width: 84px;
+    cursor: pointer;
+}
+
+/* CARD DOG */
+
+.dog-card {
+    position: relative;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+.dog-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.dog-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #F8F8F8;
+    margin: 0;
+    padding-left: 1em;
+}
+
+.bio {
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1;
+    color: #B7B7B7;
+    padding-top: 0.5em;
+    padding-left: 1.25em;
+    padding-bottom: 1.25em;
+    padding-right: 1.25em;
+}
+
+/* ACTIONS */
+
+.actions {
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border-radius: 50%;
+    padding: 2.0625em;
+    background: white;
+    border: none;
+    box-shadow: 0px 10px 20px #E9E9EA;
+}
+
+.rejected {
+    margin-right: 1.5em;
+}
+
+.liked:hover {
+    background: #DBFFF4;
+    box-shadow: 0px 10px 20px #CCF1E6;
+}
+
+.rejected:hover {
+    background: #FFE7EF;
+    box-shadow: 0px 10px 20px #EDD9DF;
+}
+
+.badges {
+    position: absolute;
+    top: 139px;
+    left: 35px;
+    transform: rotate(-30deg);
+}
+
+.badge-action {
+    max-width: 175px;
+}
+
+/* End Page*/
+
+.end-dogs {
+    padding-top: 1.5em;
+    text-align: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+}
+
+.end-logo{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #FA605F;
+    padding-left: 0.5em;
+    margin: 0;
+}
+
+.text-end-dogs {
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1;
+    color: #FA695A;
+}
+
+/* LIKED CARD */
+
+.liked-card {
+    display: flex;
+    margin: 0 auto;
+    padding: 1.25em;
+}
+
+.liked-img {
+    width: 25%;
+    border-radius: 15px;
+}
+
+.liked-info {
+    text-align: start;
+    padding-right: 1.25em;
+    padding-left: 1.25em;
+}
+
+.liked-name {
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    color: #F9655C;
+    margin: 0;
+}
+
+.liked-bio {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #535252;
+    padding-top: 0.5em;
+}
+
+@media(min-width:768px) {
+    nav,
+    main,
+    section {
+        width: 50%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .badges {
+        position: absolute;
+        top: 139px;
+        left: 350px;
+    }
+
+    .liked-card {
+        width: 50%;
+    }
+}
